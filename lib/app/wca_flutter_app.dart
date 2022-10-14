@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wca_flutter_app/app/core/theme/theme_config.dart';
+import 'package:wca_flutter_app/app/core/ui/theme/theme_config.dart';
 
 import 'pages/splash/splash_page.dart';
 

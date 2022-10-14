@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wca_flutter_app/app/core/styles/colors_app.dart';
-import 'package:wca_flutter_app/app/core/styles/text_styles.dart';
+import 'package:wca_flutter_app/app/core/ui/styles/colors_app.dart';
+import 'package:wca_flutter_app/app/core/ui/styles/text_styles.dart';
 
 class ButtonStyles {
   static ButtonStyles? _instance;
