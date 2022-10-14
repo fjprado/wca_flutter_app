@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wca_flutter_app/app/core/ui/components/button.dart';
-import 'package:wca_flutter_app/app/core/ui/components/rounded_button.dart';
 import 'package:wca_flutter_app/app/core/ui/helpers/loader.dart';
 import 'package:wca_flutter_app/app/core/ui/helpers/messages.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/button_styles.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/text_styles.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
