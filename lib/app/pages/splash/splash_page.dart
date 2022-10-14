@@ -21,43 +21,7 @@ class _SplashPageState extends State<SplashPage>
       appBar: AppBar(
         title: const Text('Splash Page'),
       ),
-      body: Center(
-        child: Column(
-          children: [
-            ElevatedButton(
-              onPressed: () async {
-                showLoader();
-                await Future.delayed(Duration(seconds: 2));
-                hideLoader();
-              },
-              style: ButtonStyles.instance.primaryButton,
-              child: Text('Salvar'),
-            ),
-            OutlinedButton(
-              onPressed: () {
-                showError('Erro no botão outlined');
-              },
-              style: ButtonStyles.instance.primaryOutlinedButton,
-              child: Text('Salvar'),
-            ),
-            TextField(),
-            Button(
-              onPressed: () {
-                showInfo('info no botão info');
-              },
-              style: ButtonStyles.instance.primaryButton,
-              labelStyle: TextStyles.instance.textPrimaryFontBold,
-              label: 'Salvar',
-            ),
-            RoundedButton(
-              icon: Icons.add,
-              onPressed: () {
-                showSuccess('success no botão redondo');
-              },
-            )
-          ],
-        ),
-      ),
+      body: Container(),
     );
   }
 }
