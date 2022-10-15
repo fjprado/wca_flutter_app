@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:wca_flutter_app/app/core/ui/components/button.dart';
 import 'package:wca_flutter_app/app/core/ui/styles/button_styles.dart';
@@ -50,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   TextFormField(
                     decoration: const InputDecoration(
-                        label: Text('Senha'),
+                        label: Text('Password'),
                         floatingLabelBehavior: FloatingLabelBehavior.never),
                   ),
                   const SizedBox(
@@ -59,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                   Padding(
                     padding: const EdgeInsets.only(left: 6),
                     child: Text(
-                      'Esqueceu a senha?',
+                      'Forgot password?',
                       style: context.textStyles.textSecondaryFontMedium
                           .copyWith(color: context.colors.yellow, fontSize: 14),
                     ),
@@ -73,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
                       style: context.buttonStyles.yellowButton,
                       labelStyle: context
                           .textStyles.textSecondaryFontExtraBoldPrimaryColor,
-                      label: 'Entrar')
+                      label: 'Sign in')
                 ]),
               ),
               SliverFillRemaining(
@@ -84,12 +85,15 @@ class _LoginPageState extends State<LoginPage> {
                     style: context.textStyles.textSecondaryFontMedium
                         .copyWith(color: Colors.white),
                     TextSpan(
-                      text: 'Não possui uma conta? ',
+                      text: "Don't have an account?",
                       children: [
                         TextSpan(
-                          text: 'Cadastre-se',
+                          text: 'Sign up',
                           style: context.textStyles.textSecondaryFontMedium
                               .copyWith(color: context.colors.yellow),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () => Navigator.of(context)
+                                .pushNamed('/auth/register'),
                         )
                       ],
                     ),
