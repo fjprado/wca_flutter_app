@@ -85,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                     style: context.textStyles.textSecondaryFontMedium
                         .copyWith(color: Colors.white),
                     TextSpan(
-                      text: "Don't have an account?",
+                      text: "Don't have an account? ",
                       children: [
                         TextSpan(
                           text: 'Sign up',
