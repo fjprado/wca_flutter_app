@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wca_flutter_app/app/core/ui/theme/theme_config.dart';
-
-import 'pages/splash/splash_page.dart';
+import 'package:wca_flutter_app/app/pages/auth/login/login_page.dart';
+import 'package:wca_flutter_app/app/pages/home/home_page.dart';
+import 'package:wca_flutter_app/app/pages/splash/splash_route.dart';
 
 class WcaFlutterApp extends StatelessWidget {
   const WcaFlutterApp({super.key});
@@ -13,7 +14,9 @@ class WcaFlutterApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeConfig.theme,
       routes: {
-        '/': (_) => const SplashPage(),
+        '/': (_) => const SplashRoute(),
+        '/auth/login': (_) => const LoginPage(),
+        '/home': (_) => const HomePage(),
       },
     );
   }
