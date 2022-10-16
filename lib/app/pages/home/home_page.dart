@@ -31,7 +31,7 @@ class _HomePageState extends HomeViewImpl {
         backgroundColor: context.colors.primary,
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () => widget.presenter.logout(),
             icon: const Icon(
               Icons.logout,
               color: Colors.white,
@@ -94,7 +94,9 @@ class _HomePageState extends HomeViewImpl {
                       height: 20,
                     ),
                     Button(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/my-stickers');
+                        },
                         outline: true,
                         width: MediaQuery.of(context).size.width * .9,
                         style: context.buttonStyles.yellowOutlinedButton,
