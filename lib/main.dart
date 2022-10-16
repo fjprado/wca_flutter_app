@@ -4,5 +4,5 @@ import 'package:wca_flutter_app/app/wca_flutter_app.dart';
 
 Future<void> main() async {
   await Env.instance.load();
-  runApp(const WcaFlutterApp());
+  runApp(WcaFlutterApp());
 }
