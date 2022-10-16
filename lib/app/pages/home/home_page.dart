@@ -7,15 +7,21 @@ import 'package:wca_flutter_app/app/core/ui/styles/button_styles.dart';
 import 'package:wca_flutter_app/app/core/ui/styles/colors_app.dart';
 import 'package:wca_flutter_app/app/core/ui/styles/text_styles.dart';
 import 'package:wca_flutter_app/app/pages/home/presenter/home_presenter.dart';
+import 'package:wca_flutter_app/app/pages/home/view/home_view_impl.dart';
 import 'package:wca_flutter_app/app/pages/home/widgets/status_tile.dart';
 import 'package:wca_flutter_app/app/pages/home/widgets/sticker_percent.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
 
   final HomePresenter presenter;
 
   const HomePage({super.key, required this.presenter});
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends HomeViewImpl {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,32 +61,35 @@ class HomePage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    const StickerPercent(percent: 25),
+                    StickerPercent(
+                      percent: user?.totalCompletePercent ?? 0,
+                    ),
                     const SizedBox(
                       height: 20,
                     ),
-                    Text('stickers', style: context.textStyles.titleWhite),
+                    Text('${user?.totalStickers ?? 0} stickers',
+                        style: context.textStyles.titleWhite),
                     const SizedBox(
                       height: 20,
                     ),
                     StatusTile(
                         icon: Image.asset('assets/images/all_icon.png'),
                         label: 'All',
-                        value: 80),
+                        value: user?.totalAlbum ?? 0),
                     const SizedBox(
                       height: 20,
                     ),
                     StatusTile(
                         icon: Image.asset('assets/images/missing_icon.png'),
                         label: 'Missing',
-                        value: 100),
+                        value: user?.totalComplete ?? 0),
                     const SizedBox(
                       height: 20,
                     ),
                     StatusTile(
                         icon: Image.asset('assets/images/repeated_icon.png'),
                         label: 'Repeated',
-                        value: 40),
+                        value: user?.totalDuplicates ?? 0),
                     const SizedBox(
                       height: 20,
                     ),
