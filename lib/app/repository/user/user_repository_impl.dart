@@ -1,11 +1,9 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:developer';
-
 import 'package:dio/dio.dart';
-import 'package:wca_flutter_app/app/core/exceptions/repository_exception.dart';
-import 'package:wca_flutter_app/app/core/rest/custom_dio.dart';
-import 'package:wca_flutter_app/app/models/user_model.dart';
 
+import '../../core/exceptions/repository_exception.dart';
+import '../../core/rest/custom_dio.dart';
+import '../../models/user_model.dart';
 import './user_repository.dart';
 
 class UserRepositoryImpl implements UserRepository {

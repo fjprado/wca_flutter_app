@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:wca_flutter_app/app/core/rest/custom_dio.dart';
-import 'package:wca_flutter_app/app/core/ui/components/button.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/button_styles.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/colors_app.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/text_styles.dart';
-import 'package:wca_flutter_app/app/pages/home/presenter/home_presenter.dart';
-import 'package:wca_flutter_app/app/pages/home/view/home_view_impl.dart';
-import 'package:wca_flutter_app/app/pages/home/widgets/status_tile.dart';
-import 'package:wca_flutter_app/app/pages/home/widgets/sticker_percent.dart';
+import '../../core/rest/custom_dio.dart';
+import '../../core/ui/components/button.dart';
+import '../../core/ui/styles/button_styles.dart';
+import '../../core/ui/styles/colors_app.dart';
+import '../../core/ui/styles/text_styles.dart';
+import 'presenter/home_presenter.dart';
+import 'view/home_view_impl.dart';
+import 'widgets/status_tile.dart';
+import 'widgets/sticker_percent.dart';
 
 class HomePage extends StatefulWidget {
 

@@ -1,4 +1,4 @@
-import 'package:wca_flutter_app/app/models/user_model.dart';
+import '../../../models/user_model.dart';
 
 abstract class HomeView {
   void updateUser(UserModel user);

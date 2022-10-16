@@ -1,10 +1,11 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_getit/flutter_getit.dart';
-import 'package:wca_flutter_app/app/pages/auth/login/login_page.dart';
-import 'package:wca_flutter_app/app/pages/auth/login/presenter/login_presenter.dart';
-import 'package:wca_flutter_app/app/pages/auth/login/presenter/login_presenter_impl.dart';
-import 'package:wca_flutter_app/app/services/login/login_service.dart';
-import 'package:wca_flutter_app/app/services/login/login_service_impl.dart';
+
+import '../../../services/login/login_service.dart';
+import '../../../services/login/login_service_impl.dart';
+import 'login_page.dart';
+import 'presenter/login_presenter.dart';
+import 'presenter/login_presenter_impl.dart';
 
 class LoginRoute extends FlutterGetItPageRoute {
   const LoginRoute({super.key});

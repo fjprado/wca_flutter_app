@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:validatorless/validatorless.dart';
-import 'package:wca_flutter_app/app/core/ui/components/button.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/text_styles.dart';
-import 'package:wca_flutter_app/app/pages/auth/register/presenter/register_presenter.dart';
-import 'package:wca_flutter_app/app/pages/auth/register/view/register_view_impl.dart';
+
+import '../../../core/ui/styles/text_styles.dart';
+import '../../../core/ui/components/button.dart';
+import 'presenter/register_presenter.dart';
+import 'view/register_view_impl.dart';
 
 class RegisterPage extends StatefulWidget {
 

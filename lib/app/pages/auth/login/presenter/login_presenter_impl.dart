@@ -1,10 +1,9 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:developer';
 
-import 'package:wca_flutter_app/app/core/exceptions/unauthorized_exception.dart';
-import 'package:wca_flutter_app/app/pages/auth/login/view/login_view.dart';
-import 'package:wca_flutter_app/app/services/login/login_service.dart';
-
+import '../../../../core/exceptions/unauthorized_exception.dart';
+import '../../../../services/login/login_service.dart';
+import '../view/login_view.dart';
 import './login_presenter.dart';
 
 class LoginPresenterImpl implements LoginPresenter {

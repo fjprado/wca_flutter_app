@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/button_styles.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/text_styles.dart';
+
+import '../styles/button_styles.dart';
+import '../styles/text_styles.dart';
 
 class Button extends StatelessWidget {
   final ButtonStyle style;

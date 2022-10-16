@@ -1,9 +1,8 @@
 import 'dart:developer';
 
-import 'package:wca_flutter_app/app/models/register_user_model.dart';
-import 'package:wca_flutter_app/app/pages/auth/register/view/register_view.dart';
-import 'package:wca_flutter_app/app/repository/auth/auth_repository.dart';
-
+import '../../../../models/register_user_model.dart';
+import '../../../../repository/auth/auth_repository.dart';
+import '../view/register_view.dart';
 import './register_presenter.dart';
 
 class RegisterPresenterImpl implements RegisterPresenter {

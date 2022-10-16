@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
-import 'package:wca_flutter_app/app/core/ui/helpers/loader.dart';
-import 'package:wca_flutter_app/app/core/ui/helpers/messages.dart';
-import 'package:wca_flutter_app/app/pages/auth/login/login_page.dart';
 
+import '../../../../core/ui/helpers/loader.dart';
+import '../../../../core/ui/helpers/messages.dart';
+import '../login_page.dart';
 import './login_view.dart';
 
 abstract class LoginViewImpl extends State<LoginPage>

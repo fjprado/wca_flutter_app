@@ -1,7 +1,6 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:wca_flutter_app/app/repository/auth/auth_repository.dart';
 
+import '../../repository/auth/auth_repository.dart';
 import './login_service.dart';
 
 class LoginServiceImpl implements LoginService {

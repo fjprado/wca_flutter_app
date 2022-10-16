@@ -1,7 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:dio/native_imp.dart';
-import 'package:wca_flutter_app/app/core/config/env/env.dart';
-import 'package:wca_flutter_app/app/core/rest/interceptors/auth_interceptor.dart';
+
+import '../config/env/env.dart';
+import 'interceptors/auth_interceptor.dart';
 
 class CustomDio extends DioForNative {
 

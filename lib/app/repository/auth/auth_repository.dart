@@ -1,4 +1,4 @@
-import 'package:wca_flutter_app/app/models/register_user_model.dart';
+import '../../models/register_user_model.dart';
 
 abstract class AuthRepository {
   Future<void> register(RegisterUserModel registerModel);

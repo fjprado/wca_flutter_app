@@ -1,7 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_getit/flutter_getit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:wca_flutter_app/app/core/ui/global/global_context.dart';
+
+import '../../ui/global/global_context.dart';
 
 class AuthInterceptor extends Interceptor {
   @override

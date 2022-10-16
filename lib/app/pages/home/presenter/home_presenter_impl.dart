@@ -1,8 +1,7 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:wca_flutter_app/app/pages/home/view/home_view.dart';
-import 'package:wca_flutter_app/app/repository/user/user_repository.dart';
 
+import '../../../repository/user/user_repository.dart';
+import '../view/home_view.dart';
 import './home_presenter.dart';
 
 class HomePresenterImpl implements HomePresenter {

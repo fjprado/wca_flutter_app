@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/colors_app.dart';
+
+import 'colors_app.dart';
 
 class TextStyles {
   static TextStyles? _instance;

@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
-import 'package:wca_flutter_app/app/core/ui/helpers/loader.dart';
-import 'package:wca_flutter_app/app/core/ui/helpers/messages.dart';
-import 'package:wca_flutter_app/app/pages/auth/register/register_page.dart';
 
+import '../../../../core/ui/helpers/loader.dart';
+import '../../../../core/ui/helpers/messages.dart';
+import '../register_page.dart';
 import './register_view.dart';
 
 abstract class RegisterViewImpl extends State<RegisterPage>

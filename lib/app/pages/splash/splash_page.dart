@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:wca_flutter_app/app/core/ui/components/button.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/button_styles.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/colors_app.dart';
-import 'package:wca_flutter_app/app/core/ui/styles/text_styles.dart';
-import 'package:wca_flutter_app/app/pages/splash/presenter/splash_presenter.dart';
-import 'package:wca_flutter_app/app/pages/splash/view/splash_view_impl.dart';
+
+import '../../core/ui/components/button.dart';
+import '../../core/ui/styles/button_styles.dart';
+import '../../core/ui/styles/colors_app.dart';
+import '../../core/ui/styles/text_styles.dart';
+import 'presenter/splash_presenter.dart';
+import 'view/splash_view_impl.dart';
 
 class SplashPage extends StatefulWidget {
 
@@ -55,7 +56,7 @@ class _SplashPageState extends SplashViewImpl {
                     style: context.buttonStyles.yellowButton,
                     labelStyle: context
                         .textStyles.textSecondaryFontExtraBoldPrimaryColor,
-                    label: 'Acessar'),
+                    label: 'Sign in'),
               ),
             ),
             Align(
