@@ -1,19 +1,20 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 class StickerModel {
   final int id;
   final String stickerCode;
-  final String stickerName;
+  final String? stickerName;
   final String stickerNumber;
-  final String stickerImage;
-
+  final String? stickerImage;
+  
   StickerModel({
     required this.id,
     required this.stickerCode,
-    required this.stickerName,
+    this.stickerName,
     required this.stickerNumber,
-    required this.stickerImage,
-  });
+    this.stickerImage,
+  });  
 
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
@@ -29,9 +30,11 @@ class StickerModel {
     return StickerModel(
       id: map['id'] as int,
       stickerCode: map['sticker_code'] as String,
-      stickerName: map['sticker_name'] as String,
+      stickerName:
+          map['sticker_name'] != null ? map['sticker_name'] as String : null,
       stickerNumber: map['sticker_number'] as String,
-      stickerImage: map['sticker_image'] as String,
+      stickerImage:
+          map['sticker_image'] != null ? map['sticker_image'] as String : null,
     );
   }
 

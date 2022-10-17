@@ -4,7 +4,7 @@ class UserStickerModel {
   final int id;
   final int idUser;
   final int idSticker;
-  final int duplicate;
+  final int duplicateStickers;
   final String stickerCode;
   final String stickerNumber;
 
@@ -12,7 +12,7 @@ class UserStickerModel {
     required this.id,
     required this.idUser,
     required this.idSticker,
-    required this.duplicate,
+    required this.duplicateStickers,
     required this.stickerCode,
     required this.stickerNumber,
   });
@@ -22,7 +22,7 @@ class UserStickerModel {
       'id': id,
       'id_user': idUser,
       'id_sticker': idSticker,
-      'duplicate': duplicate,
+      'duplicate_stickers': duplicateStickers,
       'sticker_code': stickerCode,
       'sticker_number': stickerNumber,
     };
@@ -33,7 +33,7 @@ class UserStickerModel {
       id: map['id'] as int,
       idUser: map['id_user'] as int,
       idSticker: map['id_sticker'] as int,
-      duplicate: map['duplicate'] as int,
+      duplicateStickers: map['duplicate_stickers'] as int,
       stickerCode: map['sticker_code'] as String,
       stickerNumber: map['sticker_number'] as String,
     );
