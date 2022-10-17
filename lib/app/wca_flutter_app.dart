@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
 import 'package:wca_flutter_app/app/pages/my_stickers/my_stickers_route.dart';
+import 'package:wca_flutter_app/app/pages/sticker_detail/sticker_detail_route.dart';
 import '../app/core/rest/custom_dio.dart';
 import '../app/core/ui/global/global_context.dart';
 import '../app/core/ui/global/global_context_impl.dart';
@@ -37,6 +38,7 @@ class WcaFlutterApp extends StatelessWidget {
           '/auth/register': (_) => const RegisterRoute(),
           '/home': (_) => const HomeRoute(),
           '/my-stickers': (_) => const MyStickersRoute(),
+          '/sticker-detail': (_) => const StickerDetailRoute(),
         },
       ),
     );
